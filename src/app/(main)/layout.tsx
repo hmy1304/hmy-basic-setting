@@ -1,3 +1,5 @@
+import Providers from '../providers';
+
 export default function MainLayout({
 	children,
 }: {
@@ -12,8 +14,7 @@ export default function MainLayout({
 					posts, 상세페이지, login이 공유하는 레이아웃
 				</p>
 			</div>
-
-			{children}
+			<Providers>{children}</Providers>
 		</div>
 	);
 }
